@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>My Bitcoin Wallet </title>
+        <script type="text/javascript" src="https://unpkg.com/bsv@0.30.0/bsv.min.js"></script>
+        <link rel="stylesheet" href="index_styles.css" />
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    </head>
+
+    <body>
+        <div>
+            <a href = "index.html">Wallet Homepage</a>
+            <a href = "live_info.html">Live Info</a>
+        </div>
+        
+        <div style="width: 300px; float:left; height:100px; margin:20px">
+
+            <h2 id = "head"> Crypto Conversion </h2>
+            ETH: &ensp;USD: <br/> 1:&emsp;<span id= "prc"></span> <br/>
+            <br/>
+            ETH: &ensp;EUR: <br/> 1:&emsp;<span id= "prc3"></span> <br/>
+            <br/>
+            BTC: &ensp;EUR: <br/> 1:&emsp;<span id= "prc2"></span> <br/>
+            <br/>
+            BTC: &ensp;USD: <br/> 1:&emsp;<span id= "prc1"></span> <br/>
+            <br/>
+            BTC: &ensp;JPY: <br/> 1:&emsp;<span id= "prc5"></span> <br/>
+            
+        </div>
+        
+        <div style="width: 300px; float:left; height:100px;  margin:20px">
+            <h2 id = "head"> Exchange Rate </h2>
+
+            Dollar: &ensp;Local Currency: &ensp; Country: <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl"></span> &emsp;&emsp;&emsp;&ensp;&ensp;  Romania
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl3"></span> &emsp;&emsp;&emsp;&ensp;&ensp;&ensp;  Israel
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl6"></span> &emsp;&emsp;&emsp;&ensp;&ensp;  Argentina
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl8"></span> &emsp;&emsp;&emsp;&ensp;&ensp;  Brazil
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl10"></span> &emsp;&emsp;&emsp;&ensp;&ensp;  China
+
+
+        </div>
+        <div style="width: 400px; float:left; height:100px;  margin:20px">
+            <h2 id = "head"> Big Mac Exchange Rate </h2>
+
+        
+            Dollar: &ensp;Local Currency: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Country: <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl2"></span> &emsp;Romania
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl5"></span> &emsp;Israel
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl7"></span> &emsp;Argentina
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl9"></span> &emsp;Brazil
+             <br/>
+             <br/> 1:&emsp;&emsp;&emsp;<span id= "quandl11"></span> &emsp;China
+
+        </div>
+        <script src="live_info.js"></script>
+        
+    </body>
+
+   
+</html>

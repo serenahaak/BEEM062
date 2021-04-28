@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Bitcoin Wallet</title>
+        <script type="text/javascript" src="https://unpkg.com/bsv@0.30.0/bsv.min.js"> </script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <link rel="stylesheet" href="index_styles.css" />
+
+
+    </head>
+
+    <body>
+        <div>
+            <a href = "index.html">Wallet Homepage</a>
+            <a href = "live_info.html">Live Info</a>
+        </div>
+        <div id="block" style="width: 1080px; float:left; height:100px; margin:20px; text-align:center">
+            <h1 id = "head">Bitcoin Wallet </h1> </br>
+            <h3 id = "head"> Your Wallet Address Is: </h3>
+            <p  style="color:#FF0000" id = "addresstext">  </p>
+           
+            
+        
+
+        </div>
+        
+        <div id="qrcode"> </div>
+        
+
+    </body>
+    
+    
+    
+    
+    <script>
+        var privKey = bsv.PrivateKey.fromRandom();
+        //document.getElementById("privText").innerHTML= privKey
+        var PubKey = bsv.PublicKey.fromPrivateKey(privKey);
+        //document.getElementById("pubText").innerHTML = PubKey
+        var address = bsv.Address.fromPublicKey(PubKey).toString();
+        document.getElementById("addresstext").innerHTML = address
+        
+
+    </script>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), address);
+        </script>
+    
+    <div id="balanceblock">
+            <h2 id = "balance"> Balance </h2>
+
+             Confirmed: <span id= "con"></span> Satoshis</br>
+            </br>
+             Unconfirmed:  <span id= "ucon"></span> Satoshis
+           
+        </div>
+    <script src="balance.js"></script>
+
+
+</html>

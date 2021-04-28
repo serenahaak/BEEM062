@@ -1,0 +1,25 @@
+#block {
+    background-color: grey;
+    padding: 110px;
+}
+#head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#privText{
+    word-break: break-all;
+}
+#qrcode{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+#balanceblock{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 2px solid grey;
+    padding: 2px;
+    text-align: center;
+}
